@@ -14,6 +14,31 @@ export const projects = [
     technologies: ["React", "ChartJs", "Framer Motion", "Tailwind css", "MUI"],
   },
   {
+    title: "Chat App",
+    description: [
+      "Chat app is Full stack app used for realtime chatting with the fellow users.",
+      "Real time chatting is done by using Socket.io Web RTC",
+      "it provides a signup, login functionality for the users",
+      "Frontend is made using ReactJs with Vite build tool",
+      "Routes are managed with Express Routing",
+      "MongoDb is used as a Database for the users, their conversations and messages",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1561736778-92e52a7769ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
+    link: "https://chat-app-we38.onrender.com/",
+    sourceCode: "https://github.com/KalimGithub/chat-app",
+    technologies: [
+      "ReactJs",
+      "NodeJs",
+      "ExpressJs",
+      "MongoDB",
+      "TailwindCSS",
+      "Socket.Io",
+      "ReactIcons",
+      "React-Toastify",
+    ],
+  },
+  {
     title: "Youtube Clone",
     description: [
       "Youtube clone is the clone of live video playing web app YOUTUBE",
@@ -24,7 +49,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1561736778-92e52a7769ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
     link: "https://kalimgithub.github.io/Youtube-clone/",
     sourceCode: "https://github.com/KalimGithub/Youtube-clone",
-    technologies: ["HTMl", "CSS", "Javascript", "MUI"],
+    technologies: ["HTML", "CSS", "Javascript", "MUI"],
   },
   {
     title: "Google Sheet Clone",

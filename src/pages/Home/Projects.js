@@ -6,10 +6,11 @@ import blinkit from "../../resources/images/blinkit.png";
 import youtube from "../../resources/images/youtube.png";
 import crypto from "../../resources/images/crypto.png";
 import googleSheet from "../../resources/images/google-sheet.png";
+import ChatApp from "../../resources/images/chat-app.png";
 import { motion } from "framer-motion";
 function Projects() {
   const [selectedItemIndex, setSelectedItemIndex] = useState(0);
-  const images = [crypto, youtube, googleSheet, blinkit];
+  const images = [crypto, ChatApp, youtube, googleSheet, blinkit];
   return (
     <motion.div
       initial={{ opacity: 0 }}
