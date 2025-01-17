@@ -25,13 +25,22 @@ function Intro() {
         I am a full stack developer from India learning and making new things in
         the web dvelopment (MERN stack).
       </p>
-      <a
-        href="https://drive.google.com/file/d/1Ussx0gbFMAj0JroBO1OVC1Mi_4U3ehHW/view?usp=sharing"
-        target="blank"
-        className="px-10 py-2 text-tertiary border-tertiary border-2 rounded-md font-semibold cursor-pointer"
-      >
-        Resume
-      </a>
+      <div className="flex items-center justify-start gap-6">
+        <a
+          href="https://drive.google.com/file/d/1Ussx0gbFMAj0JroBO1OVC1Mi_4U3ehHW/view?usp=sharing"
+          target="blank"
+          className="px-10 py-2 text-tertiary border-tertiary border-2 rounded-md font-semibold cursor-pointer  hover:border-secondary hover:text-secondary hover:bg-slate-800 hover:scale-[103%] ease-in-out"
+        >
+          Resume
+        </a>
+        <a
+          href="mailto:sk22kalim@gmail.com"
+          target="blank"
+          className="px-10 py-2 text-tertiary border-tertiary border-2 rounded-md font-semibold cursor-pointer hover:border-secondary hover:text-secondary hover:bg-slate-800 hover:scale-[103%] ease-in-out"
+        >
+          Hire Me!!
+        </a>
+      </div>
     </div>
   );
 }

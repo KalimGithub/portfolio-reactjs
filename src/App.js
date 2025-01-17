@@ -1,8 +1,5 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
-// import Projects from "./pages/Home/Projects";
-// import About from "./pages/Home/About";
-// import Contact from "./pages/Home/Contact";
 
 function App() {
   // const getPortfolioData = async () => {

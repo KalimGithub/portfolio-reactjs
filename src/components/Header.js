@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { IoMdMenu } from "react-icons/io";
 import { ImCross } from "react-icons/im";
@@ -12,9 +12,26 @@ import { Tooltip } from "react-tooltip";
 
 function Header() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY; // Get the current scroll position
+    setIsScrolled(scrollTop > 50); // Add blur effect if scrolled more than 50px
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
-      <nav className="flex justify-between items-center p-5 bg-primary w-[100%] m-auto fixed top-0 left-0 z-50">
+      <nav
+        className={`flex justify-between items-center p-5 bg-primary w-[100%] m-auto fixed top-0 left-0 z-50 h-28 header ${
+          isScrolled ? "blurred" : ""
+        }`}
+      >
         <h1 className="text-secondary text-2xl font-semibold">
           Portfolio<span className="text-tertiary">.</span>
         </h1>
@@ -202,29 +219,6 @@ function Header() {
         </div>
       ) : null}
     </>
-
-    // <div className="flex justify-between p-5 bg-primary w-screen">
-    //   <h1 className="text-4xl text-secondary font-semibold">S</h1>
-    //   <h1 className="text-4xl text-white font-semibold">K</h1>
-    //   <h1 className="text-4xl text-tertiary font-semibold">G</h1>
-    // </div>
-    // <div className="flex justify-between p-5 bg-primary w-screen">
-    //   <h1 className="text-4xl text-tertiary font-semibold">PortFolio</h1>
-    //   <div className="flex gap-5">
-    //     <a href="/" className="text-xl text-white">
-    //       Home
-    //     </a>
-    //     <a href="/about" className="text-xl text-white ">
-    //       About
-    //     </a>
-    //     <a href="/projects" className="text-xl text-white ">
-    //       Projects
-    //     </a>
-    //     <a href="contact" className="text-xl text-white ">
-    //       Contact
-    //     </a>
-    //   </div>
-    // </div>
   );
 }
 

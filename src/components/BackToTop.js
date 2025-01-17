@@ -27,7 +27,7 @@ const BackToTop = () => {
             behavior: "smooth",
           });
         }}
-        className="text-tertiary rounded-full flex items-center justify-center fixed bottom-[5%] right-[5%] font-semibold p-5 border-2 border-tertiary w-5 h-5 cursor-pointer hover:bg-tertiary hover:text-white"
+        className="text-tertiary bg-primary rounded-full flex items-center justify-center fixed bottom-[5%] right-[5%] font-semibold p-5 border-2 border-tertiary w-5 h-5 cursor-pointer hover:bg-tertiary hover:text-white"
       >
         <button data-tooltip-id="my-tooltip" data-tooltip-content="Back to Top">
           <FaArrowUp />

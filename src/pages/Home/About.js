@@ -1,21 +1,22 @@
 import React from "react";
 import SectionTitle from "../../components/SectionTitle";
 import { motion } from "framer-motion";
+import { skills } from "../../resources/skills";
 function About() {
-  const skills = [
-    "Javascript",
-    "React",
-    "Node",
-    "Express",
-    "MongoDb",
-    "Firebase",
-    "HTML & CSS",
-    "tailwind CSS",
-    "SQL",
-    "MUI",
-    "API",
-    "Postman",
-  ];
+  // const skills = [
+  //   "Javascript",
+  //   "React",
+  //   "Node",
+  //   "Express",
+  //   "MongoDb",
+  //   "Firebase",
+  //   "HTML & CSS",
+  //   "tailwind CSS",
+  //   "SQL",
+  //   "MUI",
+  //   "API",
+  //   "Postman",
+  // ];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -55,18 +56,33 @@ function About() {
         <h1 className="text-xl text-tertiary ">
           Here are some technologies I have been working with recently:
         </h1>
-        <div className="flex flex-wrap gap-5 py-10">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { duration: 1, ease: "easeIn" },
+          }}
+          viewport={{ once: true }}
+          className="flex flex-wrap gap-8 items-center justify-center py-10"
+        >
           {skills.map((skill, index) => {
             return (
               <div
-                className="py-2 border-2 border-tertiary px-10 text-tertiary rounded-md"
+                className="py-8  px-16 text-tertiary rounded-md border-2 border-gray-500 cursor-pointer hover:border-secondary transition-transform   hover:scale-[102%] hover:bg-slate-800 hover:rounded-lg"
                 key={index}
               >
-                <h1 className="text-tertiary font-semibold">{skill}</h1>
+                <img
+                  src={skill.image}
+                  alt="text"
+                  className="w-20 bg-transparent"
+                />
+                <h1 className="text-tertiary font-semibold text-center">
+                  {skill.title}
+                </h1>
               </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );
