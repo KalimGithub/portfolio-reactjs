@@ -28,7 +28,7 @@ function Header() {
   return (
     <>
       <nav
-        className={`flex justify-between items-center p-5 bg-primary w-[100%] m-auto fixed top-0 left-0 z-50 h-28 header ${
+        className={`flex justify-between items-center p-5 bg-primary w-[100%] m-auto fixed top-0 left-0 pb-8 z-50 h-28 header ${
           isScrolled ? "blurred" : ""
         }`}
       >

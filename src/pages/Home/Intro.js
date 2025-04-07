@@ -27,7 +27,7 @@ function Intro() {
       </p>
       <div className="flex items-center justify-start gap-6">
         <a
-          href="https://drive.google.com/file/d/1Ussx0gbFMAj0JroBO1OVC1Mi_4U3ehHW/view?usp=sharing"
+          href="https://drive.google.com/file/d/1SJCl940Y36fdGX9HXhZY3Znsg5xUjZem/view"
           target="blank"
           className="px-10 py-2 text-tertiary border-tertiary border-2 rounded-md font-semibold cursor-pointer  hover:border-secondary hover:text-secondary hover:bg-slate-800 hover:scale-[103%] ease-in-out"
         >
