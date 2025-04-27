@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./intro.css";
 function Intro() {
   return (
-    <div className="h-[80vh] bg-primary flex flex-col items-start justify-center gap-8 sm:px-10 px-40">
+    <div className="h-[80vh] bg-primary flex flex-col mt-6 items-start justify-center gap-8 sm:px-10 px-40">
       <h1 className="text-white text-xl">Hi, I am</h1>
       <motion.h1
         initial={{ opacity: 0, y: 0 }}
