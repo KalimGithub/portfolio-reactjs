@@ -78,7 +78,9 @@ s/* header backdrop blurr while scrolling */
 }
 
 @media only screen and (max-width: 600px) {
-  .cursor-pointer,
+  .cursor-pointer-div {
+    display: none;
+  }
   .cursor {
     display: none;
   }
