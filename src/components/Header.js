@@ -32,9 +32,14 @@ function Header() {
           isScrolled ? "blurred" : ""
         }`}
       >
-        <h1 className="text-secondary text-2xl font-semibold">
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          className="text-secondary text-2xl font-semibold cursor-pointer"
+        >
           Portfolio<span className="text-tertiary">.</span>
-        </h1>
+        </Link>
         <div className="flex gap-4 text-lg text-gray-400 font-medium cursor-pointer sm:hidden ">
           <Link
             to="home"
